@@ -19,7 +19,6 @@ public class _04_高精度数字 {
 		System.out.println(result);
 		
 		BigDecimal bigDec1 = new BigDecimal("123.01");
-		bigDec1.setScale(5, RoundingMode.);
 		BigDecimal bigDec2 = new BigDecimal("2.01");
 		BigDecimal resultDecimal;
 		resultDecimal = bigDec1.add(bigDec2);
