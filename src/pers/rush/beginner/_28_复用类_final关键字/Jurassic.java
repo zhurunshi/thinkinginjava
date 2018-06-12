@@ -7,11 +7,11 @@ final class Dinosaur { // final类不能被继承
     void f() {}
 }
 
-class SubDinosaur extends Dinosaur {}
+// class SubDinosaur extends Dinosaur {}
 
-class MyString extends String {
+//class MyString extends String {
     // Java类库中的String类就是final类型
-}
+//}
 
 class SmallBrain {}
 
