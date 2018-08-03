@@ -9,7 +9,7 @@ class Snow {
 
 }
 
-class Powder extends Snow extends Snow{
+class Powder extends Snow {
     
 }
 
