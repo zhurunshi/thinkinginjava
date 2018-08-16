@@ -29,7 +29,7 @@ public class AddingGroups {
         }
         System.out.println();
         List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
-        list.set(1, 99);
+        list.set(1, 99); // 1的位置是第二个
         for (Integer i : list) {
             System.out.print(i + ", ");
         }
