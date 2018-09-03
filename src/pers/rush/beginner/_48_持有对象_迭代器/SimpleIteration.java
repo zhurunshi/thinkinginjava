@@ -28,8 +28,8 @@ public class SimpleIteration {
         }
         it = list.iterator();
         for(int i = 0; i < 6; ++i) {
-            it.next();
-            it.remove();
+            it.next(); // 取出一个
+            it.remove(); // 删除一个
         }
         System.out.println(list);
     }
