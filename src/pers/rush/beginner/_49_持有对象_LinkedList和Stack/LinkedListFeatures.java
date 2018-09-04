@@ -36,10 +36,5 @@ public class LinkedListFeatures {
         // 删除
         System.out.println("After removeLast(): " + ll.removeLast());
         System.out.println(ll);
-        /*
-         * Stack 栈，线性数据结构
-         * 特点：先进后出。FILO
-         * 叠加栈。
-         */
     }
 }
