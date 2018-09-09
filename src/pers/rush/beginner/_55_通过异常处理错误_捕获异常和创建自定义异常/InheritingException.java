@@ -1,7 +1,16 @@
 package pers.rush.beginner._55_通过异常处理错误_捕获异常和创建自定义异常;
 
+class SimpleException extends Exception {
+    
+}
+
 public class InheritingException {
 
+    public void f() throws SimpleException {
+        System.out.println("Throw SimpleException from f()");
+        throw new SimpleException();
+    }
+    
     public static void main(String[] args) {
         /*
          * 发现错误的理想时期就是编译时。
@@ -20,16 +29,30 @@ public class InheritingException {
          * throw new NullPointerException("提示信息");
          * try-catch里面的参数必须是Exception的子类
          * try {
-         * 
+         *      f();
          * } catch (ExceptionType e) {
          *      // 捕获到对应的异常类时，要执行的代码
          * } catch (ExceptionType2 e) {
          * 
          * }
-         * 异常处理在理论上有两种基本模型：Java支持终止模型；另外叫恢复模型（遇见错误时，修正错误）。
-         * 一般还是终止模型，由上层方法决定怎样处理；恢复模型，加强耦合，不推荐。
-         * 怎样创建自定义异常，从已有的异常类继承。
+         * 异常处理在理论上有两种基本模型：
+         * Java支持终止模型；另外叫恢复模型（遇见错误时，修正错误）。
+         * 一般还是终止模型，由上层方法决定怎样处理；
+         * 恢复模型，并不实用，加强耦合，不推荐。
+         * 
+         * 怎样创建自定义异常：从已有的异常类继承。
          */
+        
+        /*
+         * 错误类型标识严重的程序运行问题。
+         * 后面是Error的是错误类型，描述不应被应用程序捕获的反常的情况。
+         */
+        InheritingException sed = new InheritingException();
+        try {
+            sed.f();
+        } catch (SimpleException e) {
+            System.out.println("Caught it!");
+        }
     }
 
 }
