@@ -73,7 +73,7 @@ public class DynamicFields {
              * 希望自定义的异常，不只返回异常信息，还想关联另外的异常一起返回
              * 调用异常类的initCause，链接起来NullPointerException
              */
-            dfe.initCause(new NullPointerException());
+            dfe.initCause(new NullPointerException()); // 填入Cause 异常链
             throw dfe;
         }
         int fieldNumber = hasField(id);
@@ -102,11 +102,11 @@ public class DynamicFields {
             df.setField("number3", 11);
             System.out.println("df: " + df);
             System.out.println("df.getField(\"d\") : " + df.getField("d"));
+            Object field = df.setField("d", null);
         } catch (DynamicFieldsException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+            e.printStackTrace(System.out);
         } catch (NoSuchFieldException e) {
-            
+            e.printStackTrace(System.out);
         }
     }
 
