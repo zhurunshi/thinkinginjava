@@ -5,7 +5,6 @@ import java.io.IOException;
 
 class WrapCheckedException {
     void throwRuntimeException(int type) {
-
         try {
             switch (type) {
             case 0:
@@ -34,7 +33,7 @@ public class TurnOffChecking {
             try {
                 if (i < 3) {
                     wce.throwRuntimeException(i);
-                } else {
+                } else { // i == 3
                     throw new SomeOtherException();
                 }
             } catch (SomeOtherException e) {
@@ -48,7 +47,7 @@ public class TurnOffChecking {
                 } catch (IOException e) {
                     System.out.println("IOException: " + e);
                 } catch (Throwable e) {
-                    System.out.println("RuntimeExceptioin: " + e);
+                    System.out.println("Throwable: " + e);
                 }
             }
         }

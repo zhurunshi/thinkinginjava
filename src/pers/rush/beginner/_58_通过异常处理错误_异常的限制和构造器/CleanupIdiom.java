@@ -21,7 +21,7 @@ public class CleanupIdiom {
 
     public static void main(String[] args) {
         /* 1.遵循可去除对象后面紧跟着try-finally的原则,
-         * 若对象构建时不会失败,则不需要try-finally语句
+         * 若对象构建时不会失败,则不需要任何catch语句
          */
         NeedsCleanup nc1 = new NeedsCleanup();
         try {

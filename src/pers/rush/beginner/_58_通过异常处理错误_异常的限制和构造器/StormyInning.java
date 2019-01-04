@@ -94,6 +94,15 @@ public class StormyInning extends Inning implements Storm {
     
     public static void main(String[] args) {
         try {
+            Storm ssi = new StormyInning();
+        } catch (RainedOut e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
+        } catch (BaseballException e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
+        }
+        try {
             StormyInning si = new StormyInning(); // 捕获构造器异常
             si.atBat(); // 捕获方法的异常
         } catch (PopFoul e) {

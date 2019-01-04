@@ -30,3 +30,8 @@ hs_err_pid*
 
 # mac files
 .DS_Store
+
+# idea project files
+.idea/
+out/
+*.iml

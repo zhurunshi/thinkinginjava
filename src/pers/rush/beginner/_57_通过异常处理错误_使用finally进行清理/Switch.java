@@ -1,7 +1,7 @@
 package pers.rush.beginner._57_通过异常处理错误_使用finally进行清理;
 public class Switch {
 
-    private boolean state = false;
+    private boolean state = false; // 开关状态
     public boolean read() {
         return state;
     }

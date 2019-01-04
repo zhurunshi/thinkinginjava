@@ -16,7 +16,7 @@ public class MultipleReturns {
             if (i == 3) {
                 return;
             }
-            System.out.println("Point 4");
+            System.out.println("End");
             return;
         } finally { // 即使有return也会执行finally
             System.out.println("Performing cleanup");
