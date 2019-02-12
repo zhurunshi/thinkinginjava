@@ -1,4 +1,4 @@
-package pers.rush.intermediate._03_字符串_正则表达式_1;
+package pers.rush.intermediate._03_字符串_正则表达式1;
 
 public class IntegerMatch {
     public static void main(String[] args) {
