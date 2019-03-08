@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class BetterRead {
     public static void main(String[] args) {
         /**
-         * 
+         * 所有的next方法,只有在找到一个完整的分词之后才会返回
+         * Scanner还有相应的hasNext方法,用以判断下一个输入分词是否所需的类型
          */
         Scanner stdin = new Scanner(SimpleRead.input);
         System.out.println("What is your name?");
