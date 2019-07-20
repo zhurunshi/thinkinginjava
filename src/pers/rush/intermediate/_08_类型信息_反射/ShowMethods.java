@@ -1,7 +1,5 @@
 package pers.rush.intermediate._08_类型信息_反射;
 
-import com.sun.tools.internal.jxc.ap.Const;
-
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.util.regex.Pattern;
