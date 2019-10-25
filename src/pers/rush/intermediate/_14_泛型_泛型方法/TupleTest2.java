@@ -10,7 +10,7 @@ import pers.rush.intermediate._12_泛型_简单泛型.TwoTuple;
 class Amphibian {}
 class Vehicle {}
 
-public class TupleTest {
+public class TupleTest2 {
 	
 	static TwoTuple<String, Integer> f() {
 		return tuple("hi", 47);
